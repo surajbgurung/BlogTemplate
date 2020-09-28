@@ -1,0 +1,295 @@
+/*  Fonts
+-----
+font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* =================
+Typography
+================= */
+h1,h2,h3{
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #143774;
+    margin-top: 0;
+}
+
+h1 {
+   
+    font-size: 2rem;
+    margin: 0;
+}
+a {
+    color: #1792d2;
+    font-weight: bold;
+
+}
+a:hover,
+a:focus{
+    color: #143774;
+}
+strong {
+    font-weight: 700;
+}
+
+.subtitle {
+    font-weight: 700;
+    color: #1792d2;
+    font-size: .75rem;
+    margin: 0;
+}
+
+/* for aboutMepage */
+.col-title-second {
+    color: #1792d2;
+}
+ /* for aboutMe page */
+ .image-full {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2em;
+   
+}
+/* end of about Me page */
+
+
+
+/* =====================
+for column
+================ */
+.col-title {
+  font-size: 1.5rem;
+
+}
+.col-body {
+    font-family: 'Ubunto' Light;
+    
+}
+.info, 
+.col-readmore {
+    font-size: 0.875rem;
+
+}
+.col-readmore {
+    color: #1792d2;
+    text-decoration: none;
+    font-size: bold;
+
+}
+.col-readmore:hover,
+.col-readmore:focus {
+    color: #143774;
+    text-decoration: underline;
+}
+
+.info {
+    margin: 2.5em 0;
+}
+
+
+
+/* =================
+Layout
+================= */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    
+}
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
+ 
+header {
+    text-align: center;
+    background: #f8f8f8;
+    padding: 2em 0;
+    text-align: center;
+}
+/* =====main body
+ */
+ main {
+     margin-top: 3rem;
+ }
+
+.col-one-big {
+   border-bottom: 1px solid #707070;
+   padding-bottom: 1em;
+   /* background: pink; */
+   margin: 1em 0;
+}
+
+.col-one-small {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+/* small column */
+.col-two-title,
+.col-two-inside-title {
+    font-size: 1rem;
+}
+.col-two-title {
+   
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+
+   
+@media (min-width: 675px){
+    .container-flex,
+     .col-one-small{
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    .col-one {
+        width: 70%;
+    }
+    .col-two {
+        width: 25%;
+        min-width: 200px;
+        margin-left: 1em;
+    }
+    .col-one-inside-img {
+        width: 20%;
+    }
+    .col-one-inside-letter {
+        width: 75%;
+    }
+ .col-one-big {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .col-image {
+     order: -2;
+ }
+ .info {
+     order: -1;
+ }
+ .col-image{
+     width: 100%;
+     min-height: 250px;
+     object-fit: cover;
+ }
+
+}
+
+/* navigation */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #1792d2;
+}
+
+.current-page {
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+    color: #707070;
+}
+/* .col-one { 
+    width: 75%;
+}
+.col-two {
+    width: 20%;
+} */
+
+@media (max-width:675px){
+  
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin: .5em 0;
+    }
+}
+/* end of nav bar */
+/* .container-main {
+    display: flex;
+    border: 1px double pink; 
+    justify-content: space-between;
+    margin-left:20rem ;
+    margin-right: 20rem;
+} */
+/* .col-one-small {
+    display: flex;
+    border: 1px double pink;
+    
+}
+footer {
+    text-align: center;
+    background: #143774;
+    color: white;
+}
+.col-two-col {
+    margin-left: 2em;
+} */
+/* for second or small column */
+.col-two-col {
+    border: 20px solid #EBEBEB;
+    color: #143774;
+    margin-bottom: 2em;
+    padding: 1em;
+}
+/* .col-two-col-inside {
+    margin: 10px;
+} */
+.col-two-col-inside {
+    border-bottom:  1px solid #717171;
+    margin-bottom: 1em;
+    
+}
+
+.col-two-col-inside:last-child {
+    border: 0;
+    margin: 0;
+}
+/* footer */
+footer {
+    background: #143774;
+    color: white;
+    text-align: center;
+    padding: 3em 0;
+}
+
